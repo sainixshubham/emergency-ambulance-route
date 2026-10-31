@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Emergency Ambulance Route Finder</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Leaflet Map CSS -->
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    >
+</head>
+
+<body>
+
+    <header>
+        <h1>🚑 Emergency Ambulance Route Finder</h1>
+        <p>Find the shortest route to the nearest hospital</p>
+    </header>
+
+    <main class="container">
+
+        <section class="search-box">
+
+            <h2>Emergency Location</h2>
+
+            <label for="start">Select Starting Location</label>
+
+            <select id="start">
+                <option value="">Select Location</option>
+                <option value="Accident Point">Accident Point</option>
+                <option value="Sector 10">Sector 10</option>
+                <option value="Sector 15">Sector 15</option>
+                <option value="Sector 20">Sector 20</option>
+            </select>
+
+            <button id="findRoute">
+                Find Shortest Route
+            </button>
+
+        </section>
+
+        <section class="result-box">
+
+            <h2>Route Results</h2>
+
+            <div id="results">
+                Select a location to find the best hospital route.
+            </div>
+
+        </section>
+
+        <section class="map-box">
+
+            <h2>Route Map</h2>
+
+            <div id="map"></div>
+
+        </section>
+
+    </main>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>
